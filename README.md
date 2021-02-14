@@ -25,7 +25,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/muhammad-farhan-helmy-0529501a7/]
+[![LinkedIn][linkedin-shield]][linkedin-url](https://www.linkedin.com/in/muhammad-farhan-helmy-0529501a7/)
 
 
 
@@ -36,7 +36,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">PETROL-STATION-AUTOMATION-SYSTEM-BACKEND</h3>
+  <h3 align="center">Clinic booking system</h3>
 
   <p align="center">
     Side project for client, so long never use Laravel but I manage to do it!
@@ -94,7 +94,7 @@ Here's a blank template to get started:
 
 ### Built With
 
-* []()
+* [laravel](Laravel)
 * []()
 * []()
 
@@ -108,21 +108,28 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+
   ```sh
-  npm install npm@latest -g
+  composer install
+  php artisan migrate
+  php artisan serve
   ```
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/farhan-helmy/clinic-booking-system
    ```
-2. Install NPM packages
+2. Install composer packages
    ```sh
-   npm install
+   composer install
    ```
+2. Migrate and run
+   ```sh
+   php artisan migrate
+   php artisan serve
+   ```   
 
 
 
