@@ -21,3 +21,5 @@ class ProfileController extends Controller
 }
 
 
+// select * from user a where user_id=1
+// INNER JOIN booking b ON booking_id.a=id.b

@@ -14,6 +14,7 @@ class Booking extends Model
         'booking_time',
         'disease'
     ];
+    
     public function users()
     {
         return $this->belongsToMany(User::class);
