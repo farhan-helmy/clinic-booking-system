@@ -3,41 +3,41 @@
 
 <head>
     <meta charset="utf-8">
-    
+
     <!--====== Title ======-->
     <title>Smash - Bootstrap Business Template</title>
-    
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-        
+
     <!--====== Magnific Popup CSS ======-->
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        
+
     <!--====== Slick CSS ======-->
     <link rel="stylesheet" href="assets/css/slick.css">
-        
+
     <!--====== Line Icons CSS ======-->
     <link rel="stylesheet" href="assets/css/LineIcons.css">
-        
+
     <!--====== Bootstrap CSS ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    
+
     <!--====== Default CSS ======-->
     <link rel="stylesheet" href="assets/css/default.css">
-    
+
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 </head>
 
 <body>
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-   
+
     <!--====== PRELOADER PART START ======-->
 
     <div class="preloader">
@@ -58,7 +58,7 @@
     </div>
 
     <!--====== PRELOADER PART ENDS ======-->
-    
+
     <!--====== NAVBAR TWO PART START ======-->
 
     <section class="navbar-area">
@@ -66,11 +66,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                       
+
                         <a class="navbar-brand" href="#">
                             <img src="assets/images/logo.svg" alt="Logo">
                         </a>
-                        
+
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
@@ -78,12 +78,14 @@
                         </button>
 
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
-                
+
                         </div>
-                        
+
                         <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
-                               
+                                <li> <a class="navbar-brand" href="{{route('appointment.index')}}">
+                                        <h5>See appointment</h5>
+                                    </a></li>
                             </ul>
                         </div>
                     </nav> <!-- navbar -->
@@ -93,7 +95,7 @@
     </section>
 
     <!--====== NAVBAR TWO PART ENDS ======-->
-    
+
     <!--====== SLIDER PART START ======-->
 
     <section id="home" class="slider_area">
@@ -121,15 +123,15 @@
                     </div> <!-- slider-imgae box -->
                 </div> <!-- carousel-item -->
 
-               
+
             </div>
 
-           
+
         </div>
     </section>
 
     <!--====== SLIDER PART ENDS ======-->
-    
+
     <!--====== FEATRES TWO PART START ======-->
 
     <section id="services" class="features-area">
@@ -153,7 +155,7 @@
                             </div>
                         </div>
                         <div class="features-content">
-                         
+
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -167,7 +169,7 @@
                             </div>
                         </div>
                         <div class="features-content">
-                            
+
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -181,7 +183,7 @@
                             </div>
                         </div>
                         <div class="features-content">
-                           
+
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -195,7 +197,7 @@
                             </div>
                         </div>
                         <div class="features-content">
-                            
+
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -203,7 +205,7 @@
         </div> <!-- container -->
     </section>
 
-    
+
     <!--====== TESTIMONIAL PART START ======-->
 
     <section id="testimonial" class="testimonial-area">
@@ -261,7 +263,7 @@
                                 <div class="testimonial-author d-sm-flex justify-content-between">
                                     <div class="author-info d-flex align-items-center">
                                         <div class="author-image">
-                                                <img src="assets/images/author-2.jpg" alt="author">
+                                            <img src="assets/images/author-2.jpg" alt="author">
                                         </div>
                                         <div class="author-name media-body">
                                             <h5 class="name">Mr. Jems Bond</h5>
@@ -287,7 +289,7 @@
                                 <div class="testimonial-author d-sm-flex justify-content-between">
                                     <div class="author-info d-flex align-items-center">
                                         <div class="author-image">
-                                                <img src="assets/images/author-3.jpg" alt="author">
+                                            <img src="assets/images/author-3.jpg" alt="author">
                                         </div>
                                         <div class="author-name media-body">
                                             <h5 class="name">Mr. Jems Bond</h5>
@@ -314,12 +316,12 @@
     </section>
 
     <!--====== TESTIMONIAL PART ENDS ======-->
-    
+
     <!--====== TEAM START ======-->
 
 
     <!--====== TEAM  ENDS ======-->
-    
+
     <!--====== CONTACT PART START ======-->
 
     <section id="contact" class="contact-area">
@@ -380,7 +382,7 @@
                 <div class="col-lg-12">
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Leave <span>A Message.</span></h4>
-                        
+
                         <form id="contact-form" action="assets/contact.php" method="post">
                             <div class="row">
                                 <div class="col-md-6">
@@ -425,7 +427,7 @@
     </section>
 
     <!--====== CONTACT PART ENDS ======-->
-    
+
     <!--====== FOOTER PART START ======-->
 
     <section class="footer-area footer-dark">
@@ -454,16 +456,16 @@
     </section>
 
     <!--====== FOOTER PART ENDS ======-->
-    
+
     <!--====== BACK TOP TOP PART START ======-->
 
     <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
 
-    <!--====== BACK TOP TOP PART ENDS ======-->    
+    <!--====== BACK TOP TOP PART ENDS ======-->
 
     <!--====== PART START ======-->
 
-<!--
+    <!--
     <section class="">
         <div class="container">
             <div class="row">
@@ -483,31 +485,31 @@
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-    
+
     <!--====== Bootstrap js ======-->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    
+
     <!--====== Slick js ======-->
     <script src="assets/js/slick.min.js"></script>
-    
+
     <!--====== Magnific Popup js ======-->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    
+
     <!--====== Ajax Contact js ======-->
     <script src="assets/js/ajax-contact.js"></script>
-    
+
     <!--====== Isotope js ======-->
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
-    
+
     <!--====== Scrolling Nav js ======-->
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/scrolling-nav.js"></script>
-    
+
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-    
+
 </body>
 
 </html>

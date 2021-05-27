@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DashboardBooking;
 use App\Http\Controllers\ProfileController;
@@ -20,6 +21,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::prefix('appointment')->name('appointment.')->group(function () {
+    Route::get('', [AppointmentController::class, 'index'])->name('index');
+    Route::get('data', [AppointmentController::class, 'data'])->name('data');
+});
 
 Route::middleware(['auth'])->group(function () {
     Route::resource('booking', BookingController::class);

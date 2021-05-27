@@ -26,28 +26,41 @@
 
 <body>
     <div id="app">
-        @include('layouts.navigation')
-        @yield('content')
+        <nav class="navbar navbar-expand-lg navbar-light bg-success bg-gradient">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Clinic Booking System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <table class="table table-bordered" id="users-table">
+            <thead>
+                <tr>
+                    <th>booking_date</th>
+                    <th>disease</th>
+                </tr>
+            </thead>
+        </table>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $('.date').datepicker({
-            format: 'yyyy-mm-dd'
-        });
-        $('.timepicker').timepicker({
-            timeFormat: 'h:mm p',
-            interval: 60,
-            minTime: '10',
-            maxTime: '6:00pm',
-            defaultTime: '11',
-            startTime: '10:00',
-            dynamic: false,
-            dropdown: true,
-            scrollbar: true
+    <script>
+        $(function() {
+            $('#users-table').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: '{{ route("appointment.data") }}',
+                columns: [{
+                        data: 'booking_date',
+                        name: 'booking_date'
+                    },
+                    {
+                        data: 'disease',
+                        name: 'disease'
+                    },
+                ]
+            });
         });
     </script>
-    @stack('scripts')
 </body>
-
 
 </html>
