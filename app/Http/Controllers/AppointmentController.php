@@ -15,6 +15,8 @@ class AppointmentController extends Controller
 
     public function data()
     {
-        return Datatables::of(Booking::query())->make(true);
+        $booking = Booking::with('users')->select('bookings.*');
+
+        return Datatables::of($booking)->make(true);
     }
 }

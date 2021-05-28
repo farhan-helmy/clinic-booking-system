@@ -31,6 +31,11 @@
                     <input type="email" class="form-control" name="email" value="{{$user->email}}" >
                    
                 </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Address</label>
+                    <input class="form-control" name="address" value="{{$user->address}}" >
+                   
+                </div>
                
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

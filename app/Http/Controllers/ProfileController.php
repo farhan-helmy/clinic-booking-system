@@ -29,7 +29,8 @@ class ProfileController extends Controller
     {
         $request->validate([
             'email' => 'required',
-            'name' => 'required'
+            'name' => 'required',
+            'address' => 'required'
         ]);
     
         $user->update($request->all());

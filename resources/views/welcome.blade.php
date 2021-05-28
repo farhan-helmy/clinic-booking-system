@@ -84,7 +84,7 @@
                         <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
                                 <li>
-                                    <a class="navbar-brand" href="{{route('dentisteb')}}">
+                                    <a class="navbar-brand" href="{{route('dentist')}}">
                                         <h5>Dentist Login</h5>
                                     </a>
                                 </li>
