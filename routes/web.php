@@ -20,6 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/dentist', function () {
+    return view('dentist');
+})->name('dentist');
 
 Route::prefix('appointment')->name('appointment.')->group(function () {
     Route::get('', [AppointmentController::class, 'index'])->name('index');
@@ -29,7 +32,7 @@ Route::prefix('appointment')->name('appointment.')->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::resource('booking', BookingController::class);
     Route::resource('dashboard', DashboardBooking::class);
-    Route::resource('profile', ProfileController::class);
+    Route::resource('user', ProfileController::class);
 });
 
 

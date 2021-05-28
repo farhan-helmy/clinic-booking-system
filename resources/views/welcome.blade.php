@@ -83,9 +83,11 @@
 
                         <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
-                                <li> <a class="navbar-brand" href="{{route('appointment.index')}}">
-                                        <h5>See appointment</h5>
-                                    </a></li>
+                                <li>
+                                    <a class="navbar-brand" href="{{route('dentisteb')}}">
+                                        <h5>Dentist Login</h5>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </nav> <!-- navbar -->

@@ -10,14 +10,33 @@ use Illuminate\Support\Facades\Auth;
 
 class ProfileController extends Controller
 {
-    public function index() 
-    {   
+    public function index()
+    {
         $user = User::find(Auth::user()->id);
         $date = date('m-d');
         $booking = $user->bookings()->orderBy('booking_date', 'asc')->first();
-        return view('profile.index', compact('booking','user'));
+        return view('profile.index', compact('booking', 'user'));
     }
 
+    public function edit(User $user)
+    {
+
+        return view('profile.edit', compact('user'));
+
+    }
+
+    public function update(Request $request, User $user)
+    {
+        $request->validate([
+            'email' => 'required',
+            'name' => 'required'
+        ]);
+    
+        $user->update($request->all());
+    
+        return redirect()->route('user.index')
+                        ->with('success','User updated successfully');
+    }
 }
 
 

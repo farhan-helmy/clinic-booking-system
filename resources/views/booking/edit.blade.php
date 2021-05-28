@@ -22,17 +22,25 @@
                 @csrf
                 @method('PUT')
                 <div class="col-md-4 mx-auto">
-                    <label class="control-label" for="date">Date</label>
-                    <input class="date form-control" placeholder="MM/DD/YYY" type="text" name="booking_date" value="{{ $booking->booking_date }}" required>
+                    <label class="control-label" for="date">Date and Time</label>
+                    <input class="form-control" placeholder="MM/DD/YYY" type="datetime-local" name="booking_date" required>
                     <div class="valid-tooltip">
                         Looks good!
                     </div>
-                    <label for="validationTooltip03" class="form-label">Time</label>
-                    <input type="text" class="timepicker form-control" name="booking_time" value="{{ $booking->booking_time }}" required>
                     <label for="validationTooltip04" class="form-label">Disease</label>
                     <select class="form-select" id="validationTooltip04" name="disease" required>
-                        <option selected disabled value="{{ $booking->booking_disease }}">Choose...</option>
-                        <option value="cakid gigi">Cakid gigi</option>
+                        <option selected disabled value="">Choose...</option>
+                        <option value="Cosmetic Dentistry ">Cosmetic Dentistry</option>
+                        <option value="General Dentistry">General Dentistry</option>
+                        <option value="Preventive Dentistry">Preventive Dentistry </option>
+                        <option value="Children's Dentistry">Children's Dentistry</option>
+                        <option value="Extraction">Extraction</option>
+                        <option value="Implant">Implant</option>
+                        <option value="Braces">Braces</option>
+                        <option value="Crown">Crown</option>
+                        <option value="White Filling">White Filling</option>
+                        <option value="Root Canal Treatment">Root Canal Treatment</option>
+                        <option value="Scaling">Scaling</option>
                     </select>
                     <div class="invalid-tooltip">
                         Please select a valid state.
